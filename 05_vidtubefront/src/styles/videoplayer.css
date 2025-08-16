@@ -1,0 +1,69 @@
+/* src/styles/VideoPlayer.css */
+
+.video-player-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #0f172a; /* dark slate */
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+.video-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.video-wrapper video {
+  width: 100%;
+  max-height: 70vh;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Title */
+.video-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 15px;
+  color: #f1f5f9;
+}
+
+/* Description */
+.video-description {
+  font-size: 1rem;
+  color: #cbd5e1;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+/* Owner Info */
+.owner-info {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.owner-info img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #38bdf8;
+  margin-right: 10px;
+}
+
+.owner-info p {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #e2e8f0;
+}
+
+/* Message / Loading */
+.message {
+  padding: 20px;
+  text-align: center;
+  color: #f87171;
+  font-weight: bold;
+}

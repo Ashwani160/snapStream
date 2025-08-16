@@ -1,0 +1,208 @@
+:root {
+  --bg-color: #121212;            /* Deep dark background */
+  --card-bg: #1e1e2e;             /* Slightly lighter dark for cards */
+  --text-color: #f5f5f5;          /* Almost white for text */
+  --accent: #64ffda;              /* Teal accent */
+  --button-bg: #7c3aed;           /* Vibrant violet */
+  --button-hover: #6d28d9;        /* Darker violet on hover */
+  --button-secondary-bg: #ff8c42; /* Warm orange */
+  --button-secondary-color: #fff;
+  --modal-bg: #1c1c1c;            /* Dark modal background */
+  --modal-text: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.page {
+  padding: 30px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  text-align: center;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.message {
+  text-align: center;
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+.user-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  width: 280px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.cover-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  background-color: #2a2a40;
+}
+
+.avatar-box {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 3px solid #fff;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  margin-top: 50px;
+  padding: 10px 20px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.name {
+  margin: 10px 0 4px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #bb86fc; /* Soft purple */
+}
+
+.username {
+  color: #999;
+  font-size: 14px;
+}
+
+.email {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.button-primary {
+  background: var(--button-bg);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+  background: var(--button-hover);
+  transform: scale(1.05);
+}
+
+.button-unsub {
+  background-color: #ff4d4d; /* Red for unsubscribe */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-unsub:hover {
+  background-color: #e63b3b;
+  transform: scale(1.05);
+}
+
+.button-secondary {
+  background-color: var(--button-secondary-bg);
+  color: var(--button-secondary-color);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-secondary:hover {
+  background-color: #ff7026;
+  transform: scale(1.05);
+}
+
+.close-button {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--modal-text);
+}
+
+.sub-list {
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.sub-list-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
+  font-size: 14px;
+  color: var(--modal-text);
+}
+
+.ReactModal__Overlay {
+  z-index: 1000;
+}
+
+.ReactModal__Content {
+  background-color: var(--modal-bg) !important;
+  color: var(--modal-text) !important;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  margin: auto;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  font-family: "Segoe UI", sans-serif;
+}

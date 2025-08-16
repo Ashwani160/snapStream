@@ -1,0 +1,117 @@
+/* styles/Login.css */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+/* Wrapper to enforce full-page height with flex */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Navigation */
+.header {
+  padding: 10px 20px;
+  background: #1f1f1f;
+}
+
+.header nav a {
+  color: #9ae9dd;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content grows to fill space */
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Login box styling */
+.login-container {
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ffc3;
+  width: 300px;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #00ffc3;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container label {
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.login-container input {
+  padding: 10px;
+  background-color: #262626;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.login-container input:focus {
+  outline: none;
+  border-color: #00ffc3;
+}
+
+.login-container button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #00ffc3;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #00e0b6;
+}
+
+.message {
+  margin-top: 15px;
+  color: #ff5050;
+}
+
+/* Footer always at bottom */
+.footer {
+  padding: 15px 20px;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: #ccc;
+  font-size: 0.9rem;
+}
